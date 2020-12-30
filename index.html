@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, userscalable=no, initial-scale1.0, maximum-scale=1.0, minmum-scale=1.0">
-    <meta http-equic="X-UA-Compatible" content="ie=edge">
-    <title>Apple</title>
-    <link rel="stylesheet" herf="styles.css">
+   <meta charset="UTF-8">
+   <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minmum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Apple</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="nav">
-                <ul class="nav list nav-list-mobile">
-                    <li class="nav-item">
-                        <div class="mobile-menu">
+   <header>
+      <div class="container">
+         <nav class="nav">
+            <ul class="nav-list nav-list-mobile">
+               <li class="nav-item">
+                  <div class="mobile-menu">
                             <span class="line top"></span>
                             <span class="line bottom"></span>
-                        </div>
-                    </li>
-                     <li class="nav-item">
-                        <a href="index.html" class ="nav-link nav-link-apple"><!--여기에 로고나 아이콘이 들어갈거야-->
-                        </a> 
-                     </li>
-                     <li class="nav-item">
-                        <a href="#" class ="nav-link nav-link-bag"><!--여기에 로고나 아이콘이 들어갈거야--></a> 
-                     </li>
-                </ul>       <!--   ul.nav-list.nav-list-mobile|c   ???-->
+                  </div>
+               </li>
+                  
+               <li class="nav-item">
+                  <a href="index.html" class ="nav-link nav-link-apple"><!--여기에 로고나 아이콘이 들어갈거야--></a> 
+               </li>
+                     
+               <li class="nav-item">
+                     <a href="#" class ="nav-link nav-link-bag"><!--여기에 로고나 아이콘이 들어갈거야--></a> 
+               </li>
+
+            </ul>       <!--   ul.nav-list.nav-list-mobile|c   ???-->
                 <!-- /.nav list nav-list-mobile -->
-                <ul class="nav list nav-list-larger">               <!-- 위에 거에서 지운 이유는 그러니까 모바일에서는 메뉴가 바로 안보이고 큰 웹 화면에서는 메뉴가 바로 보이도록 설정하기 위해서 이렇게 만들었다.-->
-                     <li class="nav-item nav-item-hidden">
+                
+            <ul class="nav-list nav-list-larger">               <!-- 위에 거에서 지운 이유는 그러니까 모바일에서는 메뉴가 바로 안보이고 큰 웹 화면에서는 메뉴가 바로 보이도록 설정하기 위해서 이렇게 만들었다.-->
+                     <li class="nav-item nav-item-hidden">   <!-- 아니지 글자가 안들어가고 바로 애플 로고가 들어갈 거니가 비워놓은 거지.-->
                         <a href="index.html" class ="nav-link nav-link-apple"><!--여기에 로고나 아이콘이 들어갈거야-->
                         </a> 
                      </li>
@@ -56,14 +59,58 @@
                      </li>
                      <li class="nav-item">
                         <a href="#" class ="nav-link nav-link-search"></a>
-                     <li class="nav-item">
-                        <a href="#" class ="nav-link nav-link-bag"></a> 
                      </li>
-                </ul>       <!--   ul.nav-list.nav-list-mobile|c   ???-->
+                     <li class="nav-item nav-item-hidden">
+                        <a href="#" class ="nav-link nav-link-bag"></a>
+                     </li>
+            </ul>       <!--   ul.nav-list.nav-list-mobile|c   ???-->
                 <!-- /.nav list nav-list-larger -->
-            </div>
-        </div>
-    </header>
+         </nav>
+      </div>
+   </header>
+
+   <section class="hero iphone-11-pro">     <!-- iphone의 구역을 만들고, "container를 추가하고 이름적고 적을 글자를 적는거지"-->
+      <div class="container">
+         <div class="title">
+            <h2 class="title-heading">iphone 11 Pro</h2>
+            <h3 class="title-sub-heading">Pro cameras. Pro display. Pro performance</h3>
+            <p class="title-price">From $24.95/mo. or $599 with trade-in.*</p>
+         </div>
+         <div class="cta">
+            <a href="#" class="cta-link">Learn more</a>
+            <a href="#" class="cta-link">Buy</a>
+         </div>
+      </div>
+   </section>
+
+   <section class="hero iphone-11">     <!-- 아래의 "container"와 "cta"의 차이는 뭔가 ""안의 것은 문자인가 코드인가 이름을 지정하는 것인가? 특성을 가지는가?-->
+      <div class="container">
+         <div class="title"> <!--"title title-dark"-->
+            <h2 class="title-heading">iphone 11</h2>
+            <h3 class="title-sub-heading">Just the right amount of everything.</h3>
+            <p class="title-price">From $16.62/mo. or $399 with trade-in.*</p>
+         </div>
+         <div class="cta">
+            <a href="#" class="cta-link cta-link-dark">Learn more</a>
+            <a href="#" class="cta-link cta-link-dark">Buy</a>
+         </div>
+     </div>
+   </section>
+
+   <section class="hero watch">     
+      <div class="container">
+         <div class="title title-dark">    <!-- 그냥 "title"과 "title titel-dark"의 차이-->
+            <h2 class="title-heading-wartch"></h2>
+            <h3 class="title-sub-heading">With the new always. On Retina display. <br>
+               You've never seen a watch like this.</h3>
+         </div>
+         <div class="cta">
+            <a href="#" class="cta-link cta-link-dark" >Learn more</a>
+            <a href="#" class="cta-link cta-link-dark">Buy</a>
+         </div>
+     </div>
+   </section>
+
 
 <script src="main.js"></script>
 </body>
