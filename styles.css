@@ -1,3 +1,4 @@
+/* Global */
 *,    /*   왼쪽의 *,  의 의미 -> 추측컨데 전체 문장의 의미인듯 */
 *::before,
 *::after{
@@ -20,6 +21,8 @@ a{
     margin: 0 auto;
     padding: 0 2.2rem;
 }
+
+/*Header*/
 
 header{
     position: fixed;
@@ -78,24 +81,20 @@ header{
     background: url("images/icons/bag.svg") center no-repeat;
 }
 
+
+
+/*iphone 11 pro section */
 .iphone-11-pro{
     background: url("images/hero/iphone-11-pro/iphone_11_pro_large.jpg");
     margin-top: 4.4rem;
     
 }
 
-.hero{
-    height:69.2rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-top: .6rem solid #fff;
-    border-bottom: .6rem solid #fff;
-}
 
 
-.iphone-11-pro{
-    border-top: none;
-}
+
+
+
 
 .title{
     color: #fff;
@@ -125,5 +124,109 @@ header{
 .cta{
     text-align: center;
     margin-top: 1.8rem;
+    font-size: 1.7rem;
 }
+
+.cta-link{
+    color: #66bbff;
+    display: inline-block;
+}
+
+.cta-link:nth-child(2){
+    margin-left: 2.6rem;
+}
+
+.cta-link:hover{
+    border-bottom: 2px solid #66bbff;
+}
+
+/*iphone 11 section */
+.iphone-11{
+    background: url("images/hero/iphone-11/iphone_11_large.jpg");
+}
+
+.title-dark{
+    color: #000;
+}
+
+.cta-link-darker{
+    color: #0070c9;
+}
+
+/* Move to the bottom of all section styles to keep consistent styles */
+
+/* watch */
+
+.watch{
+    background: url("images/hero/watch/watch_large.jpg")
+}
+
+.title-heading-watch{
+    height: 7.8rem;
+    background: url("images/hero/watch/logo_watch_large.png") center no-repeat;
+    background-size: auto 7.8rem;
+    margin-top: 1.6rem;
+}
+
+
+
+/* Move to the bottom of all section styles to keep consistent styles */
+.hero{
+    height:69.2rem;
+    background-size: auto 73.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: .6rem solid #fff;
+    border-bottom: .6rem solid #fff;
+}
+
+.iphone-11-pro{
+    border-top: none;
+}
+
+
+/* end */ 
+
+
+@media screen and (max-width: 1068px){
+    .iphone-11-pro{
+        background: url("images/hero/iphone-11-pro/iphone_11_pro_medium.jpg");
+    }
+
+    .iphone-11{
+        background: url("images/hero/iphone-11/iphone_11_medium.jpg");
+    }
+
+    .watch{
+        background: url("images/hero/watch/watch_medium.jpg");
+    }
+    .hero{
+        height: 65rem;
+        background-size: auto 69.8rem;
+        background-position: bottomo center;
+        background-repeat: no-repeat;
+    }
+    .title-heading{
+        font-size: 4.4rem;
+    }
+    .title-sub-heading{
+        font-size: 2.4rem;
+    }
+    .cta-link:nth-child(2){
+        margin-left: 2rem;
+    }
+    .title-heading-watch{
+        height: 6.2rem;
+        background: url("images/hero/watch/logo_watch_medium.png") center no-repeat;
+        background-size: auto 6.2rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    
+}
+
+
+
+
 
