@@ -1,6 +1,5 @@
-const selecrElement = (element) => document.querySelector(element);
+const selectElement = (element) => document.querySelector(element);
 
-selecrElement('.mobile-menu').addEventListener('Click', () => {
-    selecrElement('header'.classList.toggle('active');
-
-    )})
+selectElement('.mobile-menu').addEventListener('Click', () => {
+    selecrElement('header').classList.toggle('active');
+});
